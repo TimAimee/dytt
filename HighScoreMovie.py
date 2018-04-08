@@ -239,7 +239,7 @@ def saveTofile(ftpUrlList):
         os.mkdir(movie_url_dir)
     filePath = movie_url_dir
     if filter_tag != "":
-        filePath = filePath + "_";
+        filePath = filePath + "_"+filter_tag+"_";
     filePath = filePath + str(filter_score) + "分以上_" + getDateTime() + ".txt"
     print "saveTofile=", filePath
     fileObject = open(filePath.decode('utf-8'), 'w')
